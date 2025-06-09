@@ -14,6 +14,7 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Format Page */
 *{
     margin: 0;
     padding: 0;
@@ -72,6 +73,11 @@ html{
 
 }
 
+.container-logo:hover {
+    transform: scale(2);
+    transition: 0.9s ;
+}
+
 .container-logo h1 a{
     text-decoration: none;
     color: black;
@@ -80,31 +86,8 @@ html{
     letter-spacing: -2px;
 }
 
-.container-user{
-    display: flex;
-    gap: 1rem;
-    cursor: pointer;
-}
 
-.container-user .fa-user{
-    font-size: 3rem;
-    color: #005B41;
-    padding-right: 2.5rem;
-    border-right: 1px solid #e2e2e2;
-}
-
-.container-user .fa-basket-shopping{
-    font-size: 3rem;
-    color: #005B41;
-    padding-left: 2rem;
-}
-
-.content-shopping-cart{
-    display: flex;
-    flex-direction: column;
-}
-
-/* NAVBAR */
+/* reset NAVBAR */
 
 .container-navbar{
     background-color: #73EC8B;
@@ -163,44 +146,7 @@ html{
     color: white;
 }
 
-.search-form{
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: 2px solid #005B41;
-    border-radius: 2rem;
-    background-color: #005B41;
-    height: 4.4rem;
-    overflow: hidden;
-}
-
-.search-form input{
-    outline: none;
-    font-family: inherit;
-    border: none;
-    width: 25rem;
-    font-size: 1.4rem;
-    padding: 0 2rem;
-    color: darkgray;
-    cursor: pointer;
-
-}
-
-.search-form input::-webkit-search-cancel-button{
-    appearance: none0;
-}
-
-.search-form .btn-search{
-    border: none;
-    background-color: #005B41;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 3rem;
-    cursor: pointer;
-}
-
+/* Responsive Menu */
 @media (max-width: 1024px) {
     .hero {
     flex-direction: column;
@@ -273,7 +219,7 @@ html{
 }
 
 
-/* About Me */
+/* Reset About Me */
 
 .about-me{
     /* display: flex;
@@ -320,8 +266,7 @@ html{
 
 
 
-
-/* Portfolio */
+/* Reset Portfolio */
 
 .portfolio {
 	display: flex;
@@ -426,10 +371,16 @@ html{
     grid-row: 1/3;
 }
 
+@media(max-widht:480px) {
+    .gallery img{
+        width: 100%;
+        height: 100%;
+    }
+
+  
+}
+
 /* Contact Form */
-
-
-
 
 .form-contact{
     padding: 25px;
@@ -537,6 +488,8 @@ input::placeholder, textarea::placeholder{
     background-color: #73EC8B
 }
 
+/* Responsive form */
+
 @media(max-widht:991px) {
     .form1{
         padding: 30px;
@@ -549,6 +502,19 @@ input::placeholder, textarea::placeholder{
     input{
         padding: 15px;
     }
+}
+
+@media(min-widht:480px) {
+    .form{
+        width: 5vh;
+    }
+
+    .form1 p{
+        text-shadow: #005B41;
+        width: 5vh;
+    }
+
+
 }
 
 /* FOOTER */
@@ -655,6 +621,9 @@ input::placeholder, textarea::placeholder{
 	font-weight: 400;
 	font-size: 1.6rem;
 }
+
+/* Responsive Footer */
+
 @media (max-width: 1024px) {
     .menu-footer {
     grid-template-columns: repeat(2, 1fr); /* Tablets: 2 columnas */
