@@ -30,5 +30,8 @@ Tablet (768px - 1024px)
 Mobile (<768px and <480px)
 ✉️ Contact
 Feel free to reach out if you'd like to collaborate or improve this project.
+You will find an interactive page that will show you some things about me and my projects, 
+you will also be able to know more about me and my processes as a software student, travel to three projects in github and the possibility of contacting me if you want. 
+I wish you enjoy the page and we will see you on Wednesday
 
 Developed by Andrés Severino Isaza
